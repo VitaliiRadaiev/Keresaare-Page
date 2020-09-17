@@ -848,6 +848,31 @@ h6 {
   text-align: center;
 }
 
+.btn-buy-default {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #d42027;
+  min-height: 36px;
+  min-width: 129px;
+  padding: 5px 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-transform: uppercase;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
 .subscription {
   padding: 93px 0 0;
   position: relative;
@@ -943,6 +968,9 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 0.26px;
   min-width: 220px;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 .slick-slider {
@@ -1785,6 +1813,324 @@ textarea.input {
   line-height: 13px;
   text-transform: uppercase;
   padding: 10px;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.calendar .subscription {
+  margin-bottom: 72px;
+}
+
+.calendar-block {
+  margin-bottom: 91px;
+}
+
+.calendar-block__body {
+  max-width: 945px;
+  margin: 0 auto;
+}
+
+.top-calendar {
+  min-height: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4px;
+}
+
+.top-calendar__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-calendar__column_left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+}
+
+.top-calendar__column_center {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.top-calendar__column_right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.top-calendar__column_right .top-calendar__btn {
+  margin-right: 0;
+  margin-left: 20px;
+  -webkit-transform: scale(-1, -1);
+      -ms-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+.top-calendar__btn {
+  margin-right: 20px;
+}
+
+.top-calendar__btn > a {
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  background-color: #d42027;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  position: relative;
+}
+
+.top-calendar__btn > a:before {
+  position: absolute;
+  content: url(../img/icons/arrow-up.svg);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-82%, -50%) rotate(-90deg);
+      -ms-transform: translate(-82%, -50%) rotate(-90deg);
+          transform: translate(-82%, -50%) rotate(-90deg);
+}
+
+.top-calendar__month-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+.top-calendar__selected-month {
+  text-transform: uppercase;
+}
+
+.calendar-block__list {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+
+.calendar-block__list > li:not(:last-child) {
+  border-bottom: 1px solid #cccccc;
+}
+
+.item-calendar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  min-height: 104px;
+}
+
+.item-calendar__column {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-calendar__column:not(:last-child) {
+  border-right: 1px solid #cccccc;
+}
+
+.item-calendar__column_1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 162px;
+          flex: 0 0 162px;
+  padding-right: 10px;
+}
+
+.item-calendar__column_2 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.item-calendar__column_3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 141px;
+          flex: 0 0 141px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+
+.item-calendar__column_3 .item-calendar__text-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 100%;
+}
+
+.item-calendar__column_4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 186px;
+          flex: 0 0 186px;
+  padding: 10px;
+}
+
+.item-calendar__column_5 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 153px;
+          flex: 0 0 153px;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.item-calendar__month {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.item-calendar__date {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.item-calendar__time {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.item-calendar__title > a {
+  color: #2d2d2d;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.item-calendar__author {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.item-calendar__theater-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.item-calendar__tipe {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80px;
+          flex: 0 0 80px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  max-width: 80px;
+}
+
+.item-calendar__duration {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+}
+
+.item-calendar__address {
+  word-break: break-word;
+}
+
+.item-calendar__btn-buy-ticket {
+  width: 100%;
+}
+
+.item-calendar__btn-buy-ticket .btn-buy-default {
+  font-size: 12px;
+  min-width: 136px;
+}
+
+.item-calendar__sold-out {
+  color: #b9b9bb;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+
+.item-calendar__only-cash-desk {
+  color: #d42027;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
 }
 
 .home .header__bg {
@@ -2245,25 +2591,16 @@ textarea.input {
 }
 
 .card-coming-soon__btn > a {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  background-color: #d42027;
-  min-height: 36px;
-  min-width: 129px;
-  padding: 5px 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 14px;
-  text-transform: uppercase;
+  /*display: inline-flex;
+			background-color: $mainColor2;
+			min-height: 36px;
+			min-width: 129px;
+			padding: 5px 10px;
+			justify-content: center;
+			align-items: center;
+			color: #fff;
+			@include title(14,700,14);
+			text-transform: uppercase;*/
 }
 
 .text-coming-soon {
@@ -2304,7 +2641,7 @@ textarea.input {
 }
 
 .footer__content {
-  padding: 0 4.52%;
+  padding: 0 3.32%;
 }
 
 .footer__line {
@@ -2331,6 +2668,9 @@ textarea.input {
   height: 42px;
   width: 42px;
   background-color: #d42027;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 .footer__btn-back > a:before {
@@ -2499,6 +2839,14 @@ textarea.input {
     opacity: 0.8;
   }
 
+  .btn-buy-default:hover {
+    background-color: #972126;
+  }
+
+  .subscription__submit-wrap button:hover {
+    background-color: #972126;
+  }
+
   .select__option:hover {
     background: #d9d9d9;
   }
@@ -2519,8 +2867,24 @@ textarea.input {
     display: none;
   }
 
+  .bottom-header__link > a:hover {
+    background-color: #972126;
+  }
+
+  .top-calendar__btn > a:hover {
+    background-color: #972126;
+  }
+
+  .item-calendar__title > a:hover {
+    color: #d42027;
+  }
+
   .main-slider .slick-arrow:hover {
     background-color: rgba(45, 45, 45, 0.6);
+  }
+
+  .footer__btn-back > a:hover {
+    background-color: #972126;
   }
 
   .footer-link:hover {
@@ -2642,6 +3006,106 @@ textarea.input {
     background-size: contain;
   }
 
+  .calendar-block__list {
+    margin: 0 -18px;
+  }
+
+  .item-calendar {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 5px 20px 26px 14px;
+  }
+
+  .item-calendar__column:not(:last-child) {
+    border: none;
+  }
+
+  .item-calendar__column_1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+
+  .item-calendar__column_2 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding-left: 4px;
+    padding-top: 11px;
+  }
+
+  .item-calendar__column_3 .item-calendar__text-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
+  .item-calendar__column_3 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin-left: 15px;
+    padding-top: 12px;
+  }
+
+  .item-calendar__column_4 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding: 11px 0 10px 4px;
+  }
+
+  .item-calendar__column_5 {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding: 0 0 0 4px;
+    text-align: left;
+  }
+
+  .item-calendar__tipe {
+    border: none;
+    max-width: none;
+    text-align: right;
+    padding: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    margin-bottom: 3px;
+  }
+
+  .item-calendar__duration {
+    text-align: right;
+    padding: 0;
+  }
+
+  .item-calendar__sold-out {
+    text-align: left;
+  }
+
+  .item-calendar__only-cash-desk {
+    text-align: left;
+  }
+
   .bottom-slider__inner {
     display: block;
     min-height: auto;
@@ -2746,6 +3210,18 @@ textarea.input {
 
   .bottom-header {
     padding-left: 5.2%;
+  }
+
+  .calendar .subscription {
+    margin-bottom: 33px;
+  }
+
+  .calendar-block {
+    margin-bottom: 95px;
+  }
+
+  .top-calendar {
+    min-height: 70px;
   }
 
   .home .subscription {
@@ -2886,6 +3362,10 @@ textarea.input {
 }
 
 @media (max-width: 575px) {
+  .top-calendar__month-name {
+    display: none;
+  }
+
   .home-slider__main {
     position: relative;
     height: 165px;
