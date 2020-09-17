@@ -2589,6 +2589,7 @@ textarea.input {
   line-height: 25px;
   text-transform: uppercase;
   cursor: pointer;
+  width: 100%;
 }
 
 .accordion__title.active {
