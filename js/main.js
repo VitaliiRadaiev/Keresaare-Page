@@ -569,6 +569,28 @@ if($('.anchor').length>0) {
 // === // Плавная прокрута якорей ==================================================================
 
 
+// === sub menu handler ==================================================================
+{
+	let subMenu = document.querySelector('.sub-menu');
+	if(subMenu) {
+		let btn = document.querySelector('.sub-menu__mobile-btn');
+		let list = document.querySelector('.sub-menu__list');
+		btn.addEventListener('click', () => {
+			list.classList.toggle('_open');
+			btn.classList.toggle('_open');
+
+			if(list.clientHeight <= 44) {
+				list.style.maxHeight = list.scrollHeight + 19 + 'px';
+			} else {
+				list.style.maxHeight = '44px';
+			}
+		})
+	}
+}
+
+// === // sub menu handler ==================================================================
+
+
 
 });
 

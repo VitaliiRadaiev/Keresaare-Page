@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="css/style.min.css">
 	</head>
 	<body>
-		<div class="wrapper calendar">
+		<div class="wrapper repertoire">
 			<header class="header" id="header">
 				<div class="header__body container">
 					<div class="header__top-line"></div>
@@ -98,13 +98,13 @@
 				</div>
 				<div class="header__sub-menu sub-menu">
 					<div class="sub-menu__body container">
-						<!-- <ul class="sub-menu__list">
-							<li >
+						<ul class="sub-menu__list">
+							<li class="active">
 								<a href="#">
 									Lavastused
 								</a>
 							</li>
-							<li class="active">
+							<li>
 								<a href="#">
 									Tulekul
 								</a>
@@ -117,184 +117,84 @@
 
 						</ul>
 
-						<div class="sub-menu__mobile-btn"></div> -->
+						<div class="sub-menu__mobile-btn"></div>
 					</div>
 				</div>
 			</header>
 			<main class="page">
-				<section class="calendar-block">
-					<div class="container">
-						<div class="calendar-block__body">
-							<div class="calendar-block__top top-calendar">
-								<div class="top-calendar__column top-calendar__column_left">
-									<div class="top-calendar__btn">
-										<a href="#"></a>
-									</div>
-									<div class="top-calendar__month-name">
-										Juuni
-									</div>	
-								</div>
-								<div class="top-calendar__column top-calendar__column_center">
-									<div class="top-calendar__selected-month title">
-										Juuli
-									</div>
-								</div>
-								<div class="top-calendar__column top-calendar__column_right">
-									<div class="top-calendar__btn">
-										<a href="#"></a>
-									</div>
-									<div class="top-calendar__month-name">
-										August
-									</div>	
-								</div>
-							</div>
-							<ul class="calendar-block__list">
+				
+				<section class="card-block">
+					<div class="card-block__body">
+						<div class="card-block__item">
+							<div class="card-block__title"></div>
+							<ul class="card-block__list">
 								<li>
-									<div class="item-calendar">
-										<div class="item-calendar__column item-calendar__column_1">
-											<div class="item-calendar__month">R</div>
-											<div class="item-calendar__text-wrap">
-												<div class="item-calendar__date">24. juuli</div>
-												<div class="item-calendar__time">kell 18:00</div>
-											</div>
-										</div> 
-										<div class="item-calendar__column item-calendar__column_2">
-											<div class="item-calendar__title">
-												<a href="#">ÕITSEV MERI</a>
-											</div>
-											<div class="item-calendar__author">August Mälk</div>
-											<div class="item-calendar__theater-name">
-												Etendust andva teatri nimi
-											</div>
+									<div class="card card_2">
+										<div class="card__img ibg">
+											<figure>
+												<img src="img/card/card-3.jpg" alt="">
+											</figure>
 										</div>
-										<div class="item-calendar__column item-calendar__column_3">
-											<div class="item-calendar__text-wrap">
-												<div class="item-calendar__tipe">Etendus</div>
-												<div class="item-calendar__duration">2.15 h</div>
+										<div class="card__inner">
+											<div class="card__title">
+												Röövsaak
 											</div>
-										</div>
-										<div class="item-calendar__column item-calendar__column_4">
-											<div class="item-calendar__address">
-												Mihkli talumuuseum,
-												Viki küla, Kihelkonna
+											<div class="card__author">
+												Joe Orton
 											</div>
-										</div>
-										<div class="item-calendar__column item-calendar__column_5">
-											<div class="item-calendar__sold-out">
-												Välja müüdud
+											<div class="card__hr-wrap">
+												<div class="card__hr"></div>
 											</div>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="item-calendar">
-										<div class="item-calendar__column item-calendar__column_1">
-											<div class="item-calendar__month">P</div>
-											<div class="item-calendar__text-wrap">
-												<div class="item-calendar__date">26. juuli</div>
-												<div class="item-calendar__time">kell 18:00</div>
-											</div>
-										</div>
-										<div class="item-calendar__column item-calendar__column_2">
-											<div class="item-calendar__title">
-												<a href="#">ÕITSEV MERI</a>
-											</div>
-											<div class="item-calendar__author">August Mälk</div>
-											<div class="item-calendar__theater-name">
-												
-											</div>
-										</div>
-										<div class="item-calendar__column item-calendar__column_3">
-											<div class="item-calendar__text-wrap">
-												<div class="item-calendar__tipe">Etendus</div>
-												<div class="item-calendar__duration">2.15 h</div>
-											</div>
-										</div>
-										<div class="item-calendar__column item-calendar__column_4">
-											<div class="item-calendar__address">
-												Mihkli talumuuseum,
-												Viki küla, Kihelkonna
-											</div>
-										</div>
-										<div class="item-calendar__column item-calendar__column_5">
-											<div class="item-calendar__btn-buy-ticket">
-												<a class="btn-buy-default" href="#">Osta pilet</a>
+											<div class="card__btn-link">
+												<a class="btn-buy-default" href="#">Vaata</a>
 											</div>
 										</div>
 									</div>
 								</li>
 
 								<li>
-									<div class="item-calendar">
-										<div class="item-calendar__column item-calendar__column_1">
-											<div class="item-calendar__month">e</div>
-											<div class="item-calendar__text-wrap">
-												<div class="item-calendar__date">26. juuli</div>
-												<div class="item-calendar__time">kell 18:00</div>
-											</div>
+									<div class="card card_2">
+										<div class="card__img ibg">
+											<figure>
+												<img src="img/card/card-4.jpg" alt="">
+											</figure>
 										</div>
-										<div class="item-calendar__column item-calendar__column_2">
-											<div class="item-calendar__title">
-												<a href="#">ÕITSEV MERI</a>
+										<div class="card__inner">
+											<div class="card__title">
+												Naksitrallid
 											</div>
-											<div class="item-calendar__author">August Mälk</div>
-											<div class="item-calendar__theater-name">
-												Etendust andva teatri nimi
+											<div class="card__author">
+												Eno Raud
 											</div>
-										</div>
-										<div class="item-calendar__column item-calendar__column_3">
-											<div class="item-calendar__text-wrap">
-												<div class="item-calendar__tipe">Etendus</div>
-												<div class="item-calendar__duration">2.15 h</div>
+											<div class="card__hr-wrap">
+												<div class="card__hr"></div>
 											</div>
-										</div>
-										<div class="item-calendar__column item-calendar__column_4">
-											<div class="item-calendar__address">
-												Mihkli talumuuseum,
-												Viki küla, Kihelkonna
-											</div>
-										</div>
-										<div class="item-calendar__column item-calendar__column_5">
-											<div class="item-calendar__btn-buy-ticket">
-												<a class="btn-buy-default" href="#">Osta pilet</a>
+											<div class="card__btn-link">
+												<a class="btn-buy-default" href="#">Vaata</a>
 											</div>
 										</div>
 									</div>
 								</li>
 
 								<li>
-									<div class="item-calendar">
-										<div class="item-calendar__column item-calendar__column_1">
-											<div class="item-calendar__month">t</div>
-											<div class="item-calendar__text-wrap">
-												<div class="item-calendar__date">26. juuli</div>
-												<div class="item-calendar__time">kell 18:00</div>
-											</div>
+									<div class="card card_2">
+										<div class="card__img ibg">
+											<figure>
+												<img src="img/card/card-5.jpg" alt="">
+											</figure>
 										</div>
-										<div class="item-calendar__column item-calendar__column_2">
-											<div class="item-calendar__title">
-												<a href="#">ÕITSEV MERI</a>
+										<div class="card__inner">
+											<div class="card__title">
+												Järgmine PEATUS: KOSMOS
 											</div>
-											<div class="item-calendar__author">August Mälk</div>
-											<div class="item-calendar__theater-name">
-												Etendust andva teatri nimi
+											<div class="card__author">
+												Karl Koppelmaa
 											</div>
-										</div>
-										<div class="item-calendar__column item-calendar__column_3">
-											<div class="item-calendar__text-wrap">
-												<div class="item-calendar__tipe">Etendus</div>
-												<div class="item-calendar__duration">2.15 h</div>
+											<div class="card__hr-wrap">
+												<div class="card__hr"></div>
 											</div>
-										</div>
-										<div class="item-calendar__column item-calendar__column_4">
-											<div class="item-calendar__address">
-												Mihkli talumuuseum,
-												Viki küla, Kihelkonna
-											</div>
-										</div>
-										<div class="item-calendar__column item-calendar__column_5">
-											<div class="item-calendar__only-cash-desk">
-												Ainult kassast
+											<div class="card__btn-link">
+												<a class="btn-buy-default" href="#">Vaata</a>
 											</div>
 										</div>
 									</div>
@@ -303,7 +203,6 @@
 						</div>
 					</div>
 				</section>
-
 				<section class="subscription">
 	<div class="subscription__body container">
 		<form action="/" class="subscription__form">
