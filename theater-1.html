@@ -81,9 +81,9 @@
 								<li><a href="#">Avaleht</a></li>
 								<li><a href="#">Mängukava</a></li>
 								<li><a href="#">Repertuaar</a></li>
-								<li><a class="active" href="#">Muud üritused</a></li>
+								<li><a href="#">Muud üritused</a></li>
 								<li><a href="#">Piletiinfo</a></li>
-								<li><a href="#">Teatrist</a></li>
+								<li><a class="active" href="#">Teatrist</a></li>
 								<li><a href="#">Meedia</a></li>
 							</ul>
 
@@ -143,9 +143,70 @@
 			</header>
 			
 			<main class="page">
-				<div class="theater-block">
-					
-				</div>
+				<section class="theater-block">
+					<div class="container-940">
+						<div class="theater-block__title title">
+							SA Kuressaare Teater
+						</div>
+						<div class="theater-block__body">
+							<div class="theater-block__column theater-block__column_1">
+								<ul>
+									<li>Tallinna tn 20</li>
+									<li>93819 Kuressaare</li>
+									<li>Saaremaa</li>
+								</ul>
+
+								<ul>
+									<li>+372 453 3555</li>
+									<li>+372 453 3222 (kassa)</li>
+									<li>E-mail: teater@kuressaareteater.ee</li>
+								</ul>
+
+								<ul class="theater-block__line">
+									<li>
+										<ul>
+											<li>
+												<span>Registrikood</span> 90014750
+											</li>	
+											<li>
+												<span>KMKR nr</span> EE102166318
+											</li>	
+											<li>
+												<span>TP kood </span> 417311
+											</li>	
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>
+												<span>SWED</span> EE932200221023778606 (Rahandusministeerium)
+											</li>	
+											<li>
+												<span>Viitenumber</span> 3500082169
+											</li>	
+										</ul>
+									</li>
+								</ul>
+
+								<p>
+									<strong>Sihtasutuse nõukogu: </strong><br> 
+									Maidu Varik, Kaie Rõõm-Laanet, Eva Aru, Katre Väli, 
+									Astrid-Helena Teär
+								</p>
+
+								<ul class="theater-block__list-link">
+									<li><a class="link-arrow-left" href="#">Põhikiri </a></li>
+									<li><a class="link-arrow-left" href="#">Arengukava 2020-2023</a></li>
+									<li><a class="link-arrow-left" href="#">Isikuandmete töötlemise põhimõtted</a></li>
+									<li><a class="link-arrow-left" href="#">Riigihangete läbiviimise kord </a></li>
+								</ul>
+							</div>
+							<div class="theater-block__column theater-block__column_2">
+								<div class="theater-block__map" id="map"></div>
+							</div>
+						</div>
+					</div>
+				</section>
 
 			</main>
 			<footer class="footer">
@@ -377,6 +438,10 @@
 
 		</div>
 		<script src="js/libs.min.js"></script>
+		<script
+		  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+		  defer
+		></script>
 		<script src="js/main.min.js"></script>
 	</body>
-</html>
+</html> 
