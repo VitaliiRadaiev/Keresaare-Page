@@ -785,7 +785,6 @@ html,
 body {
   height: 100%;
   min-width: 320px;
-  max-width: 2500px;
   margin: 0 auto;
 }
 
@@ -3547,6 +3546,7 @@ textarea.input {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   margin-bottom: 5px;
+  width: 33.3333%;
 }
 
 .coming-soon__text-wrap {
@@ -3571,7 +3571,7 @@ textarea.input {
 }
 
 .card-coming-soon {
-  width: 300px;
+  width: 100%;
   position: relative;
   color: #fff;
   text-align: center;
@@ -3584,6 +3584,12 @@ textarea.input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.card-coming-soon > a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .card-coming-soon:before {
@@ -3624,6 +3630,7 @@ textarea.input {
   font-weight: 400;
   line-height: 14px;
   margin-bottom: 11px;
+  color: #fff;
 }
 
 .card-coming-soon__title {
@@ -3632,6 +3639,7 @@ textarea.input {
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 4px;
+  color: #fff;
 }
 
 .card-coming-soon__subtitle {
@@ -3639,6 +3647,7 @@ textarea.input {
   font-size: 14px;
   font-weight: 700;
   line-height: 14px;
+  color: #fff;
 }
 
 .card-coming-soon__hr-wrap {
@@ -3652,19 +3661,6 @@ textarea.input {
   width: 39px;
   height: 3px;
   background-color: #ffffff;
-}
-
-.card-coming-soon__btn > a {
-  /*display: inline-flex;
-			background-color: $mainColor2;
-			min-height: 36px;
-			min-width: 129px;
-			padding: 5px 10px;
-			justify-content: center;
-			align-items: center;
-			color: #fff;
-			@include title(14,700,14);
-			text-transform: uppercase;*/
 }
 
 .text-coming-soon {
@@ -4253,11 +4249,15 @@ textarea.input {
 .card-block__list > li {
   padding: 0 10px;
   margin-bottom: 23px;
+  width: 33.3333%;
+}
+
+.card-block__list > li > a {
+  display: block;
 }
 
 .card {
-  width: 300px;
-  min-width: 300px;
+  width: 100%;
   background: #2d2d2d;
   color: #fff;
   text-align: center;
@@ -4298,6 +4298,19 @@ textarea.input {
           flex-direction: column;
 }
 
+.card__inner > a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .card__suptitle {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
@@ -4315,6 +4328,7 @@ textarea.input {
   line-height: 24px;
   text-transform: uppercase;
   margin-bottom: 2px;
+  color: #fff;
 }
 
 .card__author {
@@ -4322,6 +4336,7 @@ textarea.input {
   font-size: 14px;
   font-weight: 700;
   line-height: 14px;
+  color: #fff;
 }
 
 .card__hr-wrap {
@@ -4987,6 +5002,15 @@ textarea.input {
   width: 100%;
 }
 
+.theater .sub-menu__list > li {
+  margin-right: 3%;
+}
+
+.theater .sub-menu__list > li > a {
+  padding-left: 24px;
+  font-size: 16px;
+}
+
 .footer {
   background-color: #2d2d2d;
   color: #9b9b9b;
@@ -5609,6 +5633,12 @@ textarea.input {
   }
 }
 
+@media (max-width: 900px) {
+  .card-block__list > li {
+    width: 50%;
+  }
+}
+
 @media (max-width: 870px) {
   .staging-info__top {
     display: block;
@@ -5906,6 +5936,10 @@ textarea.input {
     margin-bottom: 31px;
   }
 
+  .coming-soon__card-list li {
+    width: 50%;
+  }
+
   .coming-soon__text-wrap {
     padding-top: 211px;
   }
@@ -6189,8 +6223,16 @@ textarea.input {
     height: 165px;
   }
 
+  .coming-soon__card-list li {
+    width: 75%;
+  }
+
   .top-calendar__month-name {
     display: none;
+  }
+
+  .card-block__list > li {
+    width: 100%;
   }
 
   .staging-info__link-f {
@@ -6257,6 +6299,10 @@ textarea.input {
 }
 
 @media (max-width: 479.98px) {
+  .coming-soon__card-list li {
+    width: 85%;
+  }
+
   .content-blog .youtube-video {
     height: 205px;
   }
@@ -6267,6 +6313,12 @@ textarea.input {
   }
 
   .media__item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 379px) {
+  .coming-soon__card-list li {
     width: 100%;
   }
 }
